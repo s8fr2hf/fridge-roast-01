@@ -9,11 +9,12 @@ when set, otherwise /output.
 
 import os
 
-LINE = (
-    "My smart fridge pushed a firmware update overnight, and now the ice "
-    "maker only works if I agree to the new terms \u2014 the milk expired, "
-    "but the EULA is forever."
-)
+_PARTS = [
+    "My smart fridge pushed a firmware update overnight,",
+    "and now the ice maker only works if I agree to the new terms",
+    "\u2014 the milk expired, but the EULA is forever.",
+]
+LINE = " ".join(_PARTS)
 
 MAX_CHARS = 200
 
